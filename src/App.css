@@ -1,0 +1,89 @@
+:root{
+  --primary-color: #353C4A;
+  --secondary-color: #343434;
+  --tertiary-color: #88C0D0;
+  --support-color: #CAC3BC;
+  --bg-color: #434C5E;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--support-color);
+  font-family: 'Adelle', sans-serif;
+  background-color: #008b8b;
+}
+
+#root{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root > div{
+  width: 480px;
+  height: 560px;
+}
+
+form{
+  width: 100%;
+  height: 100%;
+}
+
+form .inputcontainer{
+  width: 100%;
+  height: 35%;
+  background-color: crimson;
+}
+
+.inputcontainer input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 48px;
+  font-weight: 600;
+  padding-right: 8px;
+  text-align-last: right;
+  color: var(--support-color);
+  background-color: var(--primary-color);
+}
+
+
+form .keyContainer{
+  height: 65%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 16px;
+  border-top: 1px solid black;
+  background-color: var(--bg-color);
+}
+
+form .keyContainer > input{
+  margin: 4px;
+  display: flex;
+  flex-basis: auto;
+  border-radius: 8px;
+  align-items: center;
+  width: calc(25% - 8px);
+  height: calc(20% - 8px);
+  justify-content: center;
+  border: 1px solid black;
+  color: var(--support-color);
+  background-color: var(--primary-color);
+}
+
+form .keyContainer > input:hover{
+  cursor: pointer;
+  border-color: #e74c3c;
+  background-color: #e74c3c;
+}
